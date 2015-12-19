@@ -1,0 +1,1 @@
+find ~ \( -name '*~' -o -name '#*#' \) -delete | xargs --no-run-if-empty --null rm -vf
