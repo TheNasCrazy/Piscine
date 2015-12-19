@@ -5,32 +5,32 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sat Dec 19 20:32:29 2015 Afou Nacerdine
-** Last update Sat Dec 19 20:37:18 2015 Afou Nacerdine
+** Last update Sat Dec 19 20:40:48 2015 Afou Nacerdine
 */
 
 int	my_put_nbr(int nb)
 {
-  int   result;
-  int   div;
+  int	result;
+  int	div;
 
   if (nb == -2147483648)
     my_putstr("-2147483648");
   else
     {
       if (nb < 0)
-        {
-          my_putchar('-');
-          nb = nb * -1;
-        }
+	{
+	  my_putchar('-');
+	  nb = nb * -1;
+	}
       div = 1;
       while ((nb / div) >= 10)
-        div = div * 10;
+	div = div * 10;
       while (div > 0)
-        {
-          result = (nb /div) % 10;
-          my_putchar(48 + result);
-          div = div / 10;
-        }
+	{
+	  result = (nb /div) % 10;
+	  my_putchar(48 + result);
+	  div = div / 10;
+	}
     }
   return (0);
 }
