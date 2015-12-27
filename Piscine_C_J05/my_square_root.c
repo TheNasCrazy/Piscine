@@ -5,13 +5,12 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sun Dec 27 20:50:09 2015 Afou Nacerdine
-** Last update Sun Dec 27 21:28:40 2015 Afou Nacerdine
+** Last update Sun Dec 27 21:29:54 2015 Afou Nacerdine
 */
 
 int	my_square_root(int nb)
 {
   int	result;
-
 
   result = 0;
   if (nb < 0)
