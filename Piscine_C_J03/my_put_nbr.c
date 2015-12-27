@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sat Dec 19 20:32:29 2015 Afou Nacerdine
-** Last update Sat Dec 19 20:40:48 2015 Afou Nacerdine
+** Last update Sun Dec 27 18:36:25 2015 Afou Nacerdine
 */
 
 int	my_put_nbr(int nb)
