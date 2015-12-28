@@ -5,20 +5,8 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sun Dec 27 23:06:58 2015 Afou Nacerdine
-** Last update Sun Dec 27 23:29:24 2015 Afou Nacerdine
+** Last update Mon Dec 28 11:31:18 2015 Afou Nacerdine
 */
-
-#include <stdio.h>
-
-int	my_strlen(char *str)
-{
-  int	i;
-
-  i = 0;
-  while (str[i] != '\0')
-    i = i + 1;
-  return (i);
-}
 
 char	*my_revstr(char *str)
 {

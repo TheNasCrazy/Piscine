@@ -5,8 +5,10 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 00:02:34 2015 Afou Nacerdine
-** Last update Mon Dec 28 10:19:19 2015 Afou Nacerdine
+** Last update Mon Dec 28 11:28:19 2015 Afou Nacerdine
 */
+
+#include <stdlib.h>
 
 char	*my_strstr(char *str, char *to_find)
 {

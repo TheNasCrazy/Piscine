@@ -5,10 +5,10 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 10:21:21 2015 Afou Nacerdine
-** Last update Mon Dec 28 10:30:38 2015 Afou Nacerdine
+** Last update Mon Dec 28 11:26:07 2015 Afou Nacerdine
 */
 
-int	is_alpha_low(char c)
+int	is_lower(char c)
 {
   if ((c >= 'a' && c <= 'z'))
     return (1);
@@ -23,7 +23,7 @@ char	*my_strupcase(char *str)
   i = 0;
   while (str[i] != '\0')
     {
-      if (is_alpha_low(str[i]) == 1)
+      if (is_lower(str[i]) == 1)
 	str[i] = str[i] - 32;
       i = i + 1;
     }

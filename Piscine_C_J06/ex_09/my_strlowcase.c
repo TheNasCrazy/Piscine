@@ -5,10 +5,10 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 10:32:22 2015 Afou Nacerdine
-** Last update Mon Dec 28 10:33:47 2015 Afou Nacerdine
+** Last update Mon Dec 28 11:42:50 2015 Afou Nacerdine
 */
 
-int	is_alpha_up(char c)
+int	is_upper(char c)
 {
   if ((c >= 'A' && c <= 'Z'))
     return (1);
@@ -23,7 +23,7 @@ char	*my_strlowcase(char *str)
   i = 0;
   while (str[i] != '\0')
     {
-      if (is_alpha_up(str[i]) == 1)
+      if (is_upper(str[i]) == 1)
 	str[i] = str[i] + 32;
       i = i + 1;
     }
