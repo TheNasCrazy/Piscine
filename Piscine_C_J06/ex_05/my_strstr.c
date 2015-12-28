@@ -5,14 +5,14 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 00:02:34 2015 Afou Nacerdine
-** Last update Mon Dec 28 09:46:34 2015 Afou Nacerdine
+** Last update Mon Dec 28 10:19:19 2015 Afou Nacerdine
 */
 
 char	*my_strstr(char *str, char *to_find)
 {
   int	i;
   int	j;
-  
+
   i = 0;
   j = 0;
   while (str[i] != '\0')
