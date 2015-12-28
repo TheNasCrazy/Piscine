@@ -5,17 +5,28 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 00:02:34 2015 Afou Nacerdine
-** Last update Mon Dec 28 00:05:43 2015 Afou Nacerdine
+** Last update Mon Dec 28 09:46:34 2015 Afou Nacerdine
 */
 
-#include <string.h>
-
-int	main()
+char	*my_strstr(char *str, char *to_find)
 {
-  char *str1;
-  char *str2;
-
-  str1 = "nacerdinne13@gmail.com";
-  str2 = "13@";
-  printf("%s\n", strstr(str1, str2));
+  int	i;
+  int	j;
+  
+  i = 0;
+  j = 0;
+  while (str[i] != '\0')
+    {
+      if (str[i] != to_find[j])
+	j = 0;
+      else
+	j = j + 1;
+      if (!to_find[j])
+	{
+	  i = i - (j - 1);
+	  return (str + i);
+	}
+      i = i + 1;
+    }
+  return (NULL);
 }
