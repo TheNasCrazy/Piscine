@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 11:10:34 2015 Afou Nacerdine
-** Last update Tue Dec 29 11:49:00 2015 Afou Nacerdine
+** Last update Tue Dec 29 13:28:17 2015 Afou Nacerdine
 */
 
 #include <stdlib.h>
@@ -15,7 +15,11 @@ char	*my_strdup(char *str)
   int	i;
   char	*copy;
 
-  copy = malloc(sizeof(char) * (my_strlen(str) + 1));
+  if ((copy = malloc(sizeof(char) * (my_strlen(str) + 1))) == NULL)
+    {
+      my_putstr("Error malloc\n");
+      return (NULL);
+    }
   while (str[i] != '\0')
     {
       copy[i] = str[i];

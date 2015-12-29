@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 11:15:26 2015 Afou Nacerdine
-** Last update Tue Dec 29 11:40:03 2015 Afou Nacerdine
+** Last update Tue Dec 29 13:28:14 2015 Afou Nacerdine
 */
 
 #include <stdlib.h>
@@ -23,7 +23,11 @@ char	*sum_params(int ac, char **av)
       size = size + my_strlen(av[i]) + 1;
       i = i + 1;
     }
-  str = malloc(sizeof(char) * size);
+  if ((str = malloc(sizeof(char) * size)) == NULL)
+    {
+      my_putstr("Error malloc\n");
+      return (NULL);
+    }
   i = 0;
   while (i < ac)
     {

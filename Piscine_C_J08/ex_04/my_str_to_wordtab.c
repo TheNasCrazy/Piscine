@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 11:53:30 2015 Afou Nacerdine
-** Last update Tue Dec 29 12:59:20 2015 Afou Nacerdine
+** Last update Tue Dec 29 13:21:35 2015 Afou Nacerdine
 */
 
 #include <stdlib.h>
@@ -53,3 +53,4 @@ char	**my_str_to_wordtab(char *str)
   tab[k] = NULL;
   return (tab);
 }
+
