@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 19:14:49 2015 Afou Nacerdine
-** Last update Mon Dec 28 19:21:31 2015 Afou Nacerdine
+** Last update Tue Dec 29 13:32:09 2015 Afou Nacerdine
 */
 
 int	init(char *base, int *nbr, int *j, int *i)
@@ -70,9 +70,7 @@ int	my_getnbr_base(char *str, char *base)
   len = init(base, &nbr, &j, &i);
   i = check_neg(str);
   if (check_base(base, 0) == -1)
-    {
-      return (0);
-    }
+    return (0);
   while (str[j])
     {
       k = 0;

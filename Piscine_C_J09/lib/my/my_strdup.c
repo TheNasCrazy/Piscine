@@ -5,10 +5,12 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 11:10:34 2015 Afou Nacerdine
-** Last update Tue Dec 29 16:01:29 2015 Afou Nacerdine
+** Last update Tue Dec 29 15:56:44 2015 Afou Nacerdine
 */
 
 #include <stdlib.h>
+
+char	*my_strcpy(char *dest, char *src);
 
 char	*my_strdup(char *str)
 {
