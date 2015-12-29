@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 17:06:42 2015 Afou Nacerdine
-** Last update Tue Dec 29 18:12:38 2015 Afou Nacerdine
+** Last update Tue Dec 29 18:39:54 2015 Afou Nacerdine
 */
 
 #include "../include/my.h"
@@ -44,8 +44,8 @@ void	do_op(char *nbr1, char *opp, char *nbr2)
   int	inbr1;
   int	inbr2;
 
-  inbr1 = (int) atoi(nbr1);
-  inbr2 = (int) atoi(nbr2);
+  inbr1 = my_getnbr(nbr1);
+  inbr2 = my_getnbr(nbr2);
   if (opp[0] == '+' || opp[0] == '-' || opp[0] == '*' ||
       opp[0] == '/' || opp[0] == '%')
     my_do_op_tab(my_do_op_check(opp[0]), inbr1, inbr2);
