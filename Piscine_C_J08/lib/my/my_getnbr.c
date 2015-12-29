@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sat Dec 19 21:31:36 2015 Afou Nacerdine
-** Last update Sun Dec 27 18:54:54 2015 Afou Nacerdine
+** Last update Tue Dec 29 18:31:55 2015 Afou Nacerdine
 */
 
 int	is_nbr(char c)
@@ -16,9 +16,9 @@ int	is_nbr(char c)
     return (0);
 }
 
-int	is_neg(char c)
+int	is_add_sub(char c)
 {
-  if (c == '-')
+  if (c == '-' || c == '+')
     return (1);
   else
     return (0);
@@ -33,9 +33,9 @@ int	my_getnbr(char *str)
   nb = 0;
   i = 0;
   neg = 1;
-  while (is_nbr(str[i]) == 0)
+  while (is_add_sub(str[i]) == 1)
     i = i + 1;
-  if (is_neg(str[i - 1]) == 1)
+  if (str[i - 1] == '-')
     neg = -1;
   while (is_nbr(str[i]) == 1)
     {

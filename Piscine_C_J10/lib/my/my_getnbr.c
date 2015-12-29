@@ -5,8 +5,10 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sat Dec 19 21:31:36 2015 Afou Nacerdine
-** Last update Tue Dec 29 18:33:58 2015 Afou Nacerdine
+** Last update Tue Dec 29 18:34:34 2015 Afou Nacerdine
 */
+
+#include "my.h"
 
 int	is_nbr(char c)
 {
