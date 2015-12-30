@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Dec 29 17:06:42 2015 Afou Nacerdine
-** Last update Tue Dec 29 18:39:54 2015 Afou Nacerdine
+** Last update Tue Dec 29 18:50:21 2015 Afou Nacerdine
 */
 
 #include "../include/my.h"
@@ -39,6 +39,14 @@ void	my_do_op_tab(int i, int inbr1, int inbr2)
   (*tab[i])(inbr1, inbr2);
 }
 
+int	is_opp(char c)
+{
+  if (c == '+' || c == '-' || c == '*' || c == '/' || c == '%')
+    return (1);
+  else
+    return (0);
+}
+
 void	do_op(char *nbr1, char *opp, char *nbr2)
 {
   int	inbr1;
@@ -46,8 +54,7 @@ void	do_op(char *nbr1, char *opp, char *nbr2)
 
   inbr1 = my_getnbr(nbr1);
   inbr2 = my_getnbr(nbr2);
-  if (opp[0] == '+' || opp[0] == '-' || opp[0] == '*' ||
-      opp[0] == '/' || opp[0] == '%')
+  if (is_opp(opp[0]) == 1)
     my_do_op_tab(my_do_op_check(opp[0]), inbr1, inbr2);
   else
     my_put_nbr(0);
