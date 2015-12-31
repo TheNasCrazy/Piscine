@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Sat Dec 19 18:54:07 2015 Afou Nacerdine
-** Last update Sat Dec 19 19:05:08 2015 Afou Nacerdine
+** Last update Thu Dec 31 14:07:54 2015 Afou Nacerdine
 */
 
 int	my_aff_alpha()
@@ -21,3 +21,4 @@ int	my_aff_alpha()
   my_putchar('\n');
   return (0);
 }
+
