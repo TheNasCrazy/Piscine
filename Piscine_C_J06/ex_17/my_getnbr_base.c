@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 19:14:49 2015 Afou Nacerdine
-** Last update Tue Dec 29 13:32:09 2015 Afou Nacerdine
+** Last update Thu Dec 31 14:18:07 2015 Afou Nacerdine
 */
 
 int	init(char *base, int *nbr, int *j, int *i)
@@ -33,9 +33,7 @@ int	check_neg(char *s)
       i = i + 1;
     }
   if (cpt % 2 == 0)
-    {
-      return (1);
-    }
+    return (1);
   return (-1);
 }
 
