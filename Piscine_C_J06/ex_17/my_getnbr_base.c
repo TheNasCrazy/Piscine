@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Mon Dec 28 19:14:49 2015 Afou Nacerdine
-** Last update Thu Dec 31 14:18:07 2015 Afou Nacerdine
+** Last update Thu Dec 31 18:20:41 2015 Afou Nacerdine
 */
 
 int	init(char *base, int *nbr, int *j, int *i)
