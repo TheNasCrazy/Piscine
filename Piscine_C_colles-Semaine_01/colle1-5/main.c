@@ -5,11 +5,11 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Wed Dec 30 23:41:37 2015 Afou Nacerdine
-** Last update Wed Dec 30 23:41:58 2015 Afou Nacerdine
+** Last update Thu Dec 31 13:52:52 2015 Afou Nacerdine
 */
 
 int	main()
 {
-  colle(5, 5);
+  colle(5, 1);
   return (0);
 }
