@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Wed Dec 30 23:30:02 2015 Afou Nacerdine
-** Last update Wed Dec 30 23:31:01 2015 Afou Nacerdine
+** Last update Fri Jan  1 16:20:20 2016 Afou Nacerdine
 */
 
 #include <sys/types.h>
@@ -34,7 +34,7 @@ int	main(int ac, char **av)
 	check_err(av[i], 2);
       else
 	{
-	  ret = read(fd, buffer, 30000);   
+	  ret = read(fd, buffer, 30000);
 	  buffer[ret] = '\0';
 	  write(1, buffer, my_strlen(buffer));
 	}

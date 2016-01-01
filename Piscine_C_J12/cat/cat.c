@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Tue Oct 13 17:09:17 2015 Afou Nacerdine
-** Last update Wed Dec 30 23:31:04 2015 Afou Nacerdine
+** Last update Fri Jan  1 16:16:04 2016 Afou Nacerdine
 */
 
 #include <sys/types.h>
@@ -31,7 +31,7 @@ int	stock2(int ac, char buffer[30000], int i, int ret)
   if (ac == 1)
     {
       while ((ret = read(0, buffer, 30000)) > 0)
-        write(1, buffer, ret);
+	write(1, buffer, ret);
     }
 }
 
