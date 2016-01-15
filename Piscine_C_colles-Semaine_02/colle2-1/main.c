@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Fri Jan  1 16:50:31 2016 Afou Nacerdine
-** Last update Sat Jan  2 02:43:05 2016 Afou Nacerdine
+** Last update Sat Jan  2 03:10:18 2016 Afou Nacerdine
 */
 
 int	main(int ac, char **av)
@@ -25,9 +25,6 @@ int	main(int ac, char **av)
       else
 	speed = 150000;
       while (42)
-	{
-	  display(av, speed);
-	  //	  my_putchar('\r');
-	}
+	display(av, speed);
     }
 }

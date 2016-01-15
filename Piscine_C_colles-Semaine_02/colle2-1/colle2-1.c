@@ -5,7 +5,7 @@
 ** Login   <afou_n@epitech.net>
 ** 
 ** Started on  Fri Jan  1 16:56:13 2016 Afou Nacerdine
-** Last update Sat Jan  2 03:05:33 2016 Afou Nacerdine
+** Last update Sat Jan  2 09:01:46 2016 Afou Nacerdine
 */
 
 #include <unistd.h>
@@ -42,10 +42,10 @@ int	if_spd(char **tab)
 {
   int	i;
 
-  if (tab[1][0] != '-')
-    i = 1;
-  else
+  if (tab[1][0] == '-' && (tab[1][1] >= '0' && tab[1][1] <= '9'))
     i = 2;
+  else
+    i = 1;
   return (i);
 }
 
@@ -71,6 +71,8 @@ void	display(char **tab, int speed)
       if ((if_spd(tab) == 1 && size == 2) || (if_spd(tab) == 2 && size == 3))
 	{
 	  display_right(tab[i], speed);
+	  disp_space(my_strlen_max(tab));
+	  my_putchar('\r');
 	  usleep(speed);
 	  display_left(tab[i], speed);
 	}
