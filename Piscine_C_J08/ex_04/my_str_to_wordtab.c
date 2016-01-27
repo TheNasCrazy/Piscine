@@ -1,11 +1,11 @@
 /*
 ** my_str_to_wordtab.c for my_str_to_wordtab.c in /home/afou_n/Github/Piscine/Piscine_C_J08
-** 
+**
 ** Made by Afou Nacerdine
 ** Login   <afou_n@epitech.net>
-** 
+**
 ** Started on  Tue Dec 29 11:53:30 2015 Afou Nacerdine
-** Last update Tue Dec 29 13:21:35 2015 Afou Nacerdine
+** Last update Wed Jan 20 10:01:41 2016 Afou Nacerdine
 */
 
 #include <stdlib.h>
@@ -53,4 +53,3 @@ char	**my_str_to_wordtab(char *str)
   tab[k] = NULL;
   return (tab);
 }
-

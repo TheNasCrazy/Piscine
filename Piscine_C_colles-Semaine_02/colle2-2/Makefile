@@ -5,7 +5,7 @@
 ## Login   <afou_n@epitech.net>
 ## 
 ## Started on  Tue Dec 29 17:01:15 2015 Afou Nacerdine
-## Last update Sat Jan  2 22:11:45 2016 Afou Nacerdine
+## Last update Tue Jan 26 14:51:31 2016 Afou Nacerdine
 ##
 
 CC	= gcc
@@ -24,7 +24,7 @@ COM	= $(OBJ:.c=.o)
 all:	$(NAME)
 
 $(NAME):$(COM)
-	$(CC) -o $(NAME) $(COM) $(LIB)
+	$(CC) -o $(NAME) $(COM) $(LIB) -g3
 
 clean:
 	$(RM) $(COM)

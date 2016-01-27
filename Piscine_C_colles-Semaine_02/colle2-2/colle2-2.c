@@ -1,11 +1,11 @@
 /*
 ** colle2-2.c for colle2-2.c in /home/afou_n/Github/Piscine/Piscine_C_colles-Semaine_02/colle2-2
-** 
+**
 ** Made by Afou Nacerdine
 ** Login   <afou_n@epitech.net>
-** 
+**
 ** Started on  Sat Jan  2 09:05:21 2016 Afou Nacerdine
-** Last update Sat Jan  2 22:10:12 2016 Afou Nacerdine
+** Last update Tue Jan 26 14:52:54 2016 Afou Nacerdine
 */
 
 #include <stdlib.h>
@@ -103,4 +103,3 @@ void	display(char *str, int speed)
       i = i + 1;
     }
 }
-
